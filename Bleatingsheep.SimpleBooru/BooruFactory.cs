@@ -20,7 +20,7 @@ namespace Bleatingsheep.SimpleBooru
             {
                 HttpHost = new Uri(host),
             };
-            var bApi = HttpApiClient.Create<IBooruClient>(config);
+            var bApi = HttpApi.Create<IBooruClient>(config);
             return bApi;
         }
 
