@@ -14,7 +14,7 @@ namespace Bleatingsheep.SimpleBooru
             s_yandereLazy = new Lazy<IBooruClient>(() => CreateClient("https://yande.re"));
         }
 
-        private static IBooruClient CreateClient(string host)
+        public static IBooruClient CreateClient(string host)
         {
             var config = new HttpApiConfig
             {
